@@ -1,0 +1,23 @@
+[package]
+name          = "zstr"
+version       = "0.1.0"
+edition       = "2018"
+authors       = ["Árpád Goretity <h2co3@h2co3.org>"]
+repository    = "https://github.com/H2CO3/zstr/"
+license       = "MIT"
+readme        = "README.md"
+documentation = "https://docs.rs/zstr"
+description   = "Zero-terminated C string literals"
+categories    = ["external-ffi-bindings", "encoding", "memory-management", "parsing"]
+keywords      = ["C", "C string", "string", "nul-terminated", "zero-terminated"]
+
+[lib]
+proc-macro = true
+
+[dependencies.syn]
+version = "1.0.69"
+default-features = false
+features = ["proc-macro", "parsing", "printing"]
+
+[dependencies.quote]
+version = "1.0.9"
