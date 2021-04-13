@@ -9,7 +9,7 @@ readme        = "README.md"
 documentation = "https://docs.rs/zstr"
 description   = "Zero-terminated C string literals"
 categories    = ["external-ffi-bindings", "encoding", "memory-management", "parsing"]
-keywords      = ["C", "C string", "string", "nul-terminated", "zero-terminated"]
+keywords      = ["C", "C-string", "string", "nul-terminated", "zero-terminated"]
 
 [lib]
 proc-macro = true
