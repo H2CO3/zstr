@@ -1,2 +1,7 @@
+# Cargo temp files
 /target
 Cargo.lock
+
+# Vim swap files
+**/*.swp
+**/*.swo

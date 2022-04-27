@@ -1,6 +1,6 @@
 [package]
 name          = "zstr"
-version       = "0.1.0"
+version       = "0.1.1"
 edition       = "2018"
 authors       = ["Árpád Goretity <h2co3@h2co3.org>"]
 repository    = "https://github.com/H2CO3/zstr/"
@@ -14,10 +14,13 @@ keywords      = ["C", "C-string", "string", "nul-terminated", "zero-terminated"]
 [lib]
 proc-macro = true
 
+[dependencies.proc-macro2]
+version = "1.0.37"
+
 [dependencies.syn]
-version = "1.0.69"
+version = "1.0.91"
 default-features = false
 features = ["proc-macro", "parsing", "printing"]
 
 [dependencies.quote]
-version = "1.0.9"
+version = "1.0.18"
